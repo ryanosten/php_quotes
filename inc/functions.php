@@ -60,7 +60,7 @@ function printQuote($array){
     if(array_key_exists("year", $rand_quote)){
         $markup .= '<span class="year">' . $rand_quote["year"] . '</span>';
     }
-
+    //if tags available, add tags to markup
     if(array_key_exists("tags", $rand_quote)){
         $markup .= '<div class="tags-container">';
         foreach ($rand_quote["tags"] as $tag){
